@@ -1,0 +1,154 @@
+.flashcard-container {
+  perspective: 1000px;
+  width: 100%;
+  max-width: 500px;
+  height: 320px;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.flashcard {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease;
+}
+
+.flashcard-container.flipped .flashcard {
+  transform: rotateY(180deg);
+}
+
+.flashcard-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.flashcard-front {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  border: 2px solid #0f3460;
+}
+
+.flashcard-back {
+  background: linear-gradient(135deg, #0f3460 0%, #1a1a2e 100%);
+  border: 2px solid #e94560;
+  transform: rotateY(180deg);
+}
+
+.flashcard-face p {
+  font-size: 1.4rem;
+  color: #eee;
+  text-align: center;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.flip-hint {
+  position: absolute;
+  bottom: 12px;
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.answer-area {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1.2rem;
+  width: 100%;
+  max-width: 380px;
+}
+
+.answer-input {
+  flex: 1;
+  padding: 0.65rem 1rem;
+  border: 1px solid #0f3460;
+  border-radius: 8px;
+  background: #0a0a1a;
+  color: #eee;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.answer-input:focus {
+  border-color: #e94560;
+}
+
+.answer-input::placeholder {
+  color: #555;
+}
+
+.btn-check {
+  padding: 0.65rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  background: #e94560;
+  color: #fff;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: transform 0.2s;
+  white-space: nowrap;
+}
+
+.btn-check:hover {
+  transform: scale(1.05);
+}
+
+.feedback {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0.5rem 1.5rem;
+  border-radius: 8px;
+}
+
+.feedback.correct {
+  color: #2ecc71;
+  background: rgba(46, 204, 113, 0.1);
+  border: 1px solid #2ecc71;
+}
+
+.feedback.incorrect {
+  color: #e74c3c;
+  background: rgba(231, 76, 60, 0.1);
+  border: 1px solid #e74c3c;
+}
+
+.mark-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.mark-btn {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+.mark-btn:hover {
+  transform: scale(1.05);
+}
+
+.mark-btn.correct {
+  background: #2ecc71;
+  color: #fff;
+}
+
+.mark-btn.incorrect {
+  background: #e74c3c;
+  color: #fff;
+}

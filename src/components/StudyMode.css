@@ -1,0 +1,138 @@
+.study-mode {
+  padding: 1.5rem;
+}
+
+.study-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.study-header h2 {
+  color: #eee;
+  margin: 0;
+}
+
+.btn-back-inline {
+  background: none;
+  border: 1px solid #0f3460;
+  color: #aaa;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.btn-back-inline:hover {
+  color: #eee;
+  border-color: #e94560;
+}
+
+.progress {
+  color: #888;
+  font-size: 1rem;
+}
+
+.study-card-area {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.study-score {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.score-correct {
+  color: #2ecc71;
+}
+
+.score-incorrect {
+  color: #e74c3c;
+}
+
+.study-finished {
+  text-align: center;
+  padding: 3rem 1.5rem;
+}
+
+.study-finished h1 {
+  color: #eee;
+  margin-bottom: 2rem;
+}
+
+.results {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.result-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  background: #1a1a2e;
+  border: 1px solid #0f3460;
+}
+
+.result-num {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #eee;
+}
+
+.result-label {
+  font-size: 0.9rem;
+  color: #888;
+  margin-top: 0.25rem;
+}
+
+.result-item.correct .result-num {
+  color: #2ecc71;
+}
+
+.result-item.incorrect .result-num {
+  color: #e74c3c;
+}
+
+.result-item.pct .result-num {
+  color: #e94560;
+}
+
+.finished-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.btn-restart,
+.btn-back {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.btn-restart:hover,
+.btn-back:hover {
+  transform: scale(1.05);
+}
+
+.btn-restart {
+  background: #e94560;
+  color: #fff;
+}
+
+.btn-back {
+  background: #0f3460;
+  color: #fff;
+}
