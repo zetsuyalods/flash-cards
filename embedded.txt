@@ -1,0 +1,441 @@
+EMBEDDED SYSTEMS AND FIREBASE
+SHORT COMPREHENSIVE REVIEWER
+PART I: INTRODUCTION TO EMBEDDED SYSTEMS
+1. What is an Embedded System?
+An embedded system is a combination of computer hardware and software designed to perform a specific function. It can also work as part of a larger system.
+Embedded systems are usually small, low-cost, and low-power computers built into another device. They may be programmable or have fixed functions.
+•	Main idea: Embedded system = a computer built into a device to do a specific job.
+2. Main Parts of an Embedded System
+•	Hardware: The physical electronic parts.
+•	Software: Programs that tell the system what to do.
+•	Firmware: Low-level software that controls the device and is usually stored in memory.
+•	Processor: Processes instructions and data.
+•	Memory: Stores programs and data.
+•	Communication ports: Allow the processor to communicate with other devices.
+•	Power supply: Provides electrical power.
+3. How an Embedded System Works
+The sensor receives information from the outside world. Converters may change the signal into a form the processor can understand. The processor processes the information using software stored in memory. The system then produces an output, often through an actuator.
+Basic flow: Input/Sensor -> Converter -> Processor -> Output/Actuator
+4. Microprocessor and Microcontroller
+•	Microprocessor: A processor that usually needs separate memory and peripheral circuits.
+•	Microcontroller: A small computer on one chip that includes a processor, memory, and peripheral interfaces.
+•	Microcontrollers usually need less supporting circuitry because more parts are already built into the chip.
+5. SoC, FPGA, and ASIC
+•	SoC (System on a Chip): Several processors and interfaces are included on one chip.
+•	FPGA (Field-Programmable Gate Array): An integrated circuit that can be configured to perform different functions. It is flexible.
+•	ASIC (Application-Specific Integrated Circuit): A chip designed for a specific function. It is efficient when the required function is known and will not change.
+6. Sensors, Converters, and Actuators
+•	Sensor: Converts physical information into an electrical signal.
+•	A-D Converter: Changes an analog signal into a digital signal.
+•	Processor: Processes digital signals and stores information in memory.
+•	D-A Converter: Changes digital data into an analog signal.
+•	Actuator: Produces or controls a physical action or output.
+•	Common sensors: temperature, pressure, and motion sensors.
+•	Common actuators: motors and solenoids.
+7. Real-Time Systems and RTOS
+•	Real-time embedded system: Produces the required output within a defined time.
+•	RTOS (Real-Time Operating System): Helps control software execution and communication with hardware according to timing rules.
+Not every embedded system needs an RTOS, especially smaller systems.
+8. Characteristics of Embedded Systems
+•	Task-specific: Designed mainly for a particular job.
+•	Usually made of hardware, software, and firmware.
+•	Can be part of a larger system.
+•	Can use a microprocessor or microcontroller.
+•	Often used for sensing and real-time computing in IoT devices.
+•	Can range from simple to complex.
+•	May need to complete tasks within a time limit.
+9. Types of Embedded Systems
+•	Mobile embedded systems: Small and portable systems.
+•	Networked embedded systems: Connected to a network and provide output to other systems.
+•	Standalone embedded systems: Perform a specialized task without depending on a host system.
+•	Real-time embedded systems: Must provide output within a required time.
+•	Small-scale: Often use an 8-bit microcontroller.
+•	Medium-scale: Often use 16- to 32-bit microcontrollers and may connect multiple microcontrollers.
+•	Sophisticated-scale: More complex hardware, software, algorithms, and processors may be required.
+10. Embedded Software Architectures
+•	Simple control loop: Calls routines that manage specific hardware or program functions.
+•	Interrupt-controlled system: Interrupts trigger specific tasks.
+•	Cooperative multitasking: Tasks cooperate in sharing processor time.
+•	Preemptive multitasking/multithreading: The system can switch between tasks, often using an RTOS.
+11. Debugging Embedded Systems
+Debugging means finding and fixing problems in software or the system.
+•	A separate debugging system can connect to the target device through a serial or other port.
+•	A PC can also emulate the physical chip so software can be tested before or without running it on the actual chip.
+Testing and debugging are especially important because many embedded systems are used where safety and reliability matter.
+12. History of Embedded Systems
+•	1950s-1960s: Early embedded systems used discrete transistors and logic gates.
+•	1961: Charles Stark Draper developed an integrated circuit to reduce the size and weight of the Apollo Guidance Computer.
+•	1970s: Integrated circuits became more common, making systems smaller, more powerful, and more affordable.
+•	1980s: Microcontrollers became available and enabled smaller, more affordable embedded systems.
+•	1990s: Growth accelerated because of more powerful processors, better software tools, and the Internet.
+•	2000s: Wireless communication, sensors, and actuators helped embedded systems become more capable.
+•	Today: Embedded systems continue to become more powerful, versatile, and affordable.
+13. Embedded System Trends
+Embedded systems are becoming more complex and can process sensor information quickly. Growth is strongly connected to the Internet of Things (IoT). Areas include wearables, drones, smart homes, smart buildings, video surveillance, 3D printers, and smart transportation.
+PART II: FIREBASE DATABASE
+1. What is Firebase?
+Firebase is a Google product that helps developers build, manage, and grow applications. It provides ready-made services for Android, iOS, web, and Unity applications. It also provides cloud storage and uses NoSQL databases.
+Main idea: Firebase = a collection of tools for building and managing apps.
+2. Database, Cloud, and NoSQL
+•	Database: A place where information is stored and organized.
+•	Cloud: Data stored or accessed through internet-connected servers.
+•	NoSQL: A type of database that does not require traditional table-based organization.
+3. Firebase Realtime Database
+A cloud-based NoSQL database that can quickly manage and synchronize data. The presentation describes it as similar to a large JSON file.
+Main idea: Realtime Database = fast data synchronization.
+4. Cloud Firestore
+A NoSQL document database that stores information in documents. Documents can contain key-value pairs.
+•	Key = the name or label of information.
+•	Value = the actual information.
+5. Firebase Authentication
+Authentication checks the identity of a user. Firebase provides tools that make user authentication easier to build and maintain.
+6. Remote Config
+Allows developers to remotely change certain application settings, interface components, or behavior. It can also be used for seasonal or temporary content.
+7. Firebase Cloud Messaging (FCM)
+Provides a connection between applications and users for sending and receiving messages and notifications.
+8. Crashlytics
+Provides real-time crash reports and details that help developers find and understand application problems.
+9. Performance Monitoring
+Provides information about application performance so developers can review problems and make improvements.
+10. App Distribution
+Allows developers to provide pre-release applications to trusted testers for testing and feedback.
+11. Google Analytics
+Provides information about application usage and user engagement. It measures actions or events within an application.
+12. Predictions
+Uses machine learning with application analytics data to create user segments based on behavior and support other Firebase features.
+13. Dynamic Links
+Used to direct users to specific content inside an application.
+14. A/B Testing
+Compares different versions of an application experience to help determine which version works better.
+15. Firebase History
+Firebase began with an online chat service called Envolve. Developers began using it to exchange application data in real time. The architecture developed by founders James Tamplin and Andrew Lee became modern Firebase around 2012.
+16. API
+API stands for Application Programming Interface. It allows two applications to communicate with each other.
+Main idea: API = a bridge between software applications.
+17. Main Firebase Feature Groups
+•	Build Better Applications: Realtime Database, Cloud Firestore, Authentication, Remote Config, FCM.
+•	Improve App Quality: Crashlytics, Performance Monitoring, App Distribution.
+•	Grow Your App: Google Analytics, Predictions, Dynamic Links, A/B Testing.
+18. Advantages of Firebase
+•	Free plans for beginners.
+•	Real-time database is available.
+•	Growing community.
+•	Many services are available.
+19. Disadvantages of Firebase
+•	NoSQL may be difficult for people who are used to SQL.
+•	The presentation states that Firebase is still growing and has not been tested to the same extent.
+20. Must-Know Terms
+Embedded system: A computer hardware and software system designed for a specific function.
+Microprocessor: A processor that generally uses separate memory and peripheral circuits.
+Microcontroller: A small computer on one chip with processor, memory, and peripheral interfaces.
+SoC: A chip containing multiple processors and interfaces.
+FPGA: A configurable integrated circuit that can perform different functions.
+ASIC: An integrated circuit designed for a specific function.
+Sensor: Converts physical information into an electrical signal.
+Actuator: Produces or controls a physical action or output.
+RTOS: Operating system designed to manage tasks according to timing requirements.
+Firmware: Low-level software that controls a device.
+Firebase: Google's tools and services for building, managing, and growing applications.
+NoSQL: A type of database that does not require traditional tables.
+Realtime Database: Firebase cloud database designed for fast data synchronization.
+Firestore: Firebase NoSQL document database.
+Authentication: Checking a user's identity.
+FCM: Firebase service for messages and notifications.
+Crashlytics: Firebase service for crash reporting.
+API: A way for software applications to communicate.
+PART III: PROCESSORS IN EMBEDDED SYSTEMS
+1. What is a Processor?
+A processor is the brain of an embedded system. It is the basic unit that takes inputs and produces an output after processing data. Embedded system designers need to understand both microprocessors and microcontrollers.
+Main idea: Processor = the part that takes input, processes it, and produces output.
+2. Units of a Processor
+•	Control Unit (CU): Fetches instructions from memory.
+•	Execution Unit (EU): Contains the Arithmetic and Logical Unit (ALU) and circuits that carry out data transfer, data conversion, and program control tasks such as interrupts or jumps.
+•	Fetch-execute cycle: A processor repeatedly fetches and executes instructions in the same order they are fetched from memory.
+3. Types of Processors
+•	General Purpose Processor (GPP)
+•	Microprocessor
+•	Microcontroller
+•	Embedded Processor
+•	Digital Signal Processor (DSP)
+•	Media Processor
+•	Application-Specific Standard Product (ASSP)
+•	Application-Specific Instruction Processor (ASIP)
+4. General Purpose Processor (GPP)
+A GPP is designed to execute a wide range of tasks. It has a flexible instruction set architecture (ISA) and typically a large amount of memory, so it can run varied programs. GPPs are used in personal computers, workstations, and servers, and in some embedded systems such as routers and switches.
+Instructions fall into three main types:
+•	Arithmetic instructions: Math operations (ADD, SUB, MUL, DIV).
+•	Logical instructions: Comparisons and logic operations (AND, OR, XOR, NOT).
+•	Control instructions: Manage program flow (JUMP, LOOP, RET, HALT).
+Specialized processors such as GPUs (graphics) and DSPs (digital signals) can outperform GPPs within their own domains.
+5. Microprocessor
+A microprocessor is a single VLSI (Very Large Scale Integration) chip containing a CPU. It may also include caches, a floating-point unit, and pipelining units for faster instruction processing. Early microprocessors ran at about ~1 MHz; modern processors run at around 2 GHz.
+6. Microcontroller
+A microcontroller is a single-chip VLSI unit (also called a microcomputer) with limited computational power but enhanced input/output capability and several on-chip functional units. Microcontrollers are widely used in embedded systems for real-time control, with on-chip program memory and devices.
+7. Microcontroller vs. Microprocessor: Applications
+•	Microcontrollers: appliances, industrial control systems, toys, medical devices, automotive systems, telecommunications equipment.
+•	Microprocessors: personal computers, laptops, servers, networking devices, graphics cards, scientific computing.
+8. Embedded Processor
+An embedded processor is a microprocessor designed specifically for the needs of an embedded system. It is small and power-efficient. Unlike an ordinary microprocessor, whose peripherals are separate from the main chip, embedded processors often integrate peripherals to save power. The two main types are ordinary microprocessors and microcontrollers.
+9. Digital Signal Processor (DSP)
+A DSP is a special-purpose embedded processor built for the computational and power demands of audio, video, and communication applications. DSPs are 8-, 16-, or 32-bit processors designed to run faster than general purpose processors for these tasks. They measure, filter, and compress digital or analog signals, and are used in oscilloscopes, barcode scanners, mobile phones, and printers.
+Common DSP applications: speech processing, image processing, medical processing, seismology, and radar.
+10. Media Processor
+A media processor is mostly used as an image or video processor. It is a microprocessor-based system-on-a-chip designed to handle digital streaming data in real time, and can be considered a class of DSP.
+11. Application-Specific Standard Product (ASSP)
+An ASSP is an integrated circuit dedicated to a specific application market and sold to more than one user. It combines digital, mixed-signal, and analog products. When such a chip is sold to a single user instead, it is considered an ASIC.
+12. Application-Specific Instruction Processor (ASIP)
+An ASIP is usually used in a System on a Chip (SoC). Its architecture has two parts: a minimum instruction set architecture (ISA) and configurable logic that lets a designer build a custom instruction set.
+13. Must-Know Terms (Processors)
+Processor: The brain of an embedded system; takes input and produces output after processing data.
+Control Unit (CU): Fetches instructions from memory.
+Execution Unit (EU): Executes data transfer, data conversion, and program control instructions; contains the ALU.
+GPP: General Purpose Processor; flexible ISA for a wide range of tasks.
+Microprocessor: A single VLSI chip with a CPU that generally needs separate memory and peripherals.
+Microcontroller: A single-chip computer with a processor, memory, and peripheral interfaces built in.
+Embedded Processor: A microprocessor designed specifically for embedded system needs.
+DSP: Digital Signal Processor; special-purpose processor for audio, video, and communication signals.
+Media Processor: SoC-based processor for real-time image or video streaming; a class of DSP.
+ASSP: Application-Specific Standard Product; a dedicated IC sold to multiple users.
+ASIP: Application-Specific Instruction Processor; combines a minimum ISA with configurable logic.
+PART IV: ARCHITECTURE TYPES IN EMBEDDED SYSTEMS
+1. Embedded System Architecture Overview
+A typical embedded system has two main parts: embedded hardware and embedded software.
+•	Embedded hardware: processor, memory, bus, peripheral devices, I/O ports, and various controllers.
+•	Embedded software: the embedded operating system and various applications.
+2. Input and Output
+Hardware and software work together to handle input signals and produce output. Input may come from devices such as a keyboard, mouse, or touch screen, or from a sensor circuit in another embedded system. Output may be sound, light, electricity, another analog signal, or a record or file for a database.
+3. Typical Hardware Architecture
+The basic components of a computer system - microprocessor, memory, and input/output modules - are connected by a system bus so all parts can communicate and execute a program.
+•	Microprocessor: Controls operation, executes instructions, and processes data (often called the CPU).
+•	Memory: Stores instructions and data.
+•	I/O modules: Handle data exchange between the processor, memory, and external devices (e.g., storage, communications, and terminal equipment).
+•	System bus: Carries data and control signals between the processor, memory, and I/O modules.
+There are two basic architecture types used in embedded systems: Von Neumann architecture and Harvard architecture.
+4. Von Neumann Architecture
+Also called Princeton architecture, first proposed by John von Neumann. Its key feature is that software and data share the same memory: "the program is data, and the data is the program."
+Instructions and data share the same bus. This shared transmission path can become a bottleneck for computer performance, known as the Von Neumann bottleneck. Cache and branch-prediction technology can help address this.
+5. Harvard Architecture
+Named after the Harvard Mark I computer. Compared with Von Neumann architecture, it has two key features:
+•	Instructions and data are stored in two separate memory modules; they do not coexist in the same module.
+•	Two independent buses connect the CPU and memory, with no connection between the two buses.
+6. Von Neumann vs. Harvard Architecture
+Harvard architecture provides greater data-memory bandwidth because program memory and data memory are separate, making it well suited to digital signal processing (DSP); most DSP systems use it. Von Neumann architecture has simpler hardware design and more flexible program/data storage, and is usually chosen for general-purpose computers and most embedded systems.
+To read/write memory efficiently, the processor connects to cache rather than directly to main memory. In practice, the main difference between the two architectures is often single vs. dual L1 cache: Harvard architecture typically splits L1 cache into an instruction cache (I-cache) and a data cache (D-cache), while Von Neumann architecture uses a single cache.
+7. Microprocessor Architecture of Embedded Systems
+The microprocessor is the core of an embedded system. Installing it on a circuit board with the needed peripheral and expansion circuits creates a practical embedded system. The microprocessor architecture determines the instructions, supporting peripheral circuits, and expansion circuits available.
+Microprocessors range widely: 4-, 8-, 16-, 32-, and 64-bit, with performance from MHz to GHz, and from a few pins to thousands of pins.
+8. RISC vs. CISC
+•	RISC (Reduced Instruction Set Computer): Uses a small, limited, simple instruction set. Each instruction has a standard word length and short execution time, which helps optimize the instruction pipeline. A large number of general-purpose registers is often used to compensate for the reduced command functions.
+•	CISC (Complex Instruction Set Computer): Features a powerful instruction set with different instruction lengths, which facilitates pipelined execution of instructions.
+9. RISC-CISC Convergence
+The line between RISC and CISC has blurred. Many traditional CISC processors, such as Intel x86 (considered CISC architecture), now absorb RISC advantages by translating x86 instructions into RISC-like instructions through a decoder, gaining RISC-style efficiency internally.
+A processor’s internal instruction execution is called a micro operation (micro-op / μ-op). The original x86 instruction is called a macro operation (macro-op).
+A macro operation can be decoded into one or more micro operations, or several macro operations can be combined into one micro operation - a process called instruction fusion (macro-ops fusion). For example, an x86 CMP (compare) and JMP (jump) instruction can fuse into a single compare-and-jump micro operation, reducing instruction count and improving execution parallelism and efficiency.
+10. Common Embedded Microprocessor Architectures
+Most embedded systems today use one of five microprocessor architectures: RISC, CISC, MIPS, PowerPC, and SuperH.
+11. Must-Know Terms (Architecture)
+System bus: Carries data and control signals between the processor, memory, and I/O modules.
+Von Neumann architecture: Architecture where software and data share the same memory and bus.
+Von Neumann bottleneck: Performance limit caused by instructions and data sharing the same bus.
+Harvard architecture: Architecture with separate memory modules and buses for instructions and data.
+I-cache / D-cache: Separate instruction cache and data cache used in Harvard architecture.
+RISC: Reduced Instruction Set Computer; small, simple instruction set with short execution time.
+CISC: Complex Instruction Set Computer; powerful instruction set with varied instruction lengths.
+Micro-op: A processor’s internal instruction execution unit, decoded from a macro operation.
+Macro-op: The original instruction (e.g., an x86 instruction) before decoding into micro-ops.
+Instruction fusion: Combining multiple macro operations into a single micro operation for efficiency.
+PART V: QUESTIONNAIRE
+Instructions: Choose the letter of the correct answer for each item.
+A. Embedded Systems Basics
+1. What is an embedded system?
+A. A general-purpose computer used for many tasks
+B. A computer hardware and software system designed for a specific function
+C. A type of database software
+D. A programming language for mobile apps
+
+2. Which component is a configurable integrated circuit that can perform different functions?
+A. ASIC
+B. FPGA
+C. Sensor
+D. Actuator
+
+3. What converts physical information into an electrical signal?
+A. Actuator
+B. Sensor
+C. Firmware
+D. RTOS
+
+4. What is the main purpose of an RTOS in an embedded system?
+A. To browse the internet
+B. To manage tasks according to timing requirements
+C. To store large files
+D. To design circuit boards
+
+5. Low-level software that directly controls a device's hardware is called:
+A. Firmware
+B. Middleware
+C. API
+D. Firestore
+
+B. Firebase
+1. Which Firebase service is used for checking a user's identity?
+A. Firestore
+B. Authentication
+C. Crashlytics
+D. FCM
+
+2. Which Firebase database is designed for fast, real-time data synchronization?
+A. Firestore
+B. Realtime Database
+C. NoSQL Explorer
+D. BigQuery
+
+3. What kind of database is Firestore?
+A. A relational (SQL) database
+B. A NoSQL document database
+C. A flat-file spreadsheet
+D. A graph-only database
+
+4. Which Firebase service handles crash reporting?
+A. FCM
+B. Crashlytics
+C. Authentication
+D. Firestore
+
+5. What is one disadvantage of Firebase mentioned in the reviewer?
+A. It has no support for mobile apps
+B. NoSQL may be difficult for people used to SQL
+C. It cannot store any data
+D. It only works offline
+
+C. Processors in Embedded Systems
+1. Which unit of a processor fetches instructions from memory?
+A. Execution Unit
+B. Control Unit
+C. ALU only
+D. Cache Unit
+
+2. Which processor type has a flexible ISA and is used in PCs, workstations, and servers?
+A. DSP
+B. GPP
+C. ASSP
+D. ASIP
+
+3. A single VLSI chip containing a CPU that generally needs separate memory and peripherals is a:
+A. Microcontroller
+B. Microprocessor
+C. Media processor
+D. ASSP
+
+4. Which processor type is specially built for audio, video, and communication signal processing?
+A. DSP
+B. GPP
+C. Microcontroller
+D. ASSP
+
+5. An IC dedicated to a specific application market and sold to more than one user is called:
+A. ASIC
+B. ASSP
+C. ASIP
+D. GPP
+
+D. Architecture Types in Embedded Systems
+1. In which architecture do instructions and data share the same memory and bus?
+A. Harvard architecture
+B. Von Neumann architecture
+C. RISC architecture
+D. CISC architecture
+
+2. The performance limitation caused by instructions and data sharing the same bus is called the:
+A. Harvard bottleneck
+B. Von Neumann bottleneck
+C. Cache bottleneck
+D. RISC bottleneck
+
+3. Which architecture uses separate memory modules and buses for instructions and data, making it well suited to DSP?
+A. Von Neumann architecture
+B. Harvard architecture
+C. x86 architecture
+D. CISC architecture
+
+4. Which type of instruction set computer uses a small, simple instruction set with short execution time?
+A. CISC
+B. RISC
+C. ASIP
+D. ASSP
+
+5. Combining multiple macro operations into a single micro operation is called:
+A. Instruction fusion
+B. Instruction pipelining
+C. Instruction decoding
+D. Instruction caching
+
+Answer Key
+A. Embedded Systems Basics
+1. B
+2. B
+3. B
+4. B
+5. A
+B. Firebase
+1. B
+2. B
+3. B
+4. B
+5. B
+C. Processors in Embedded Systems
+1. B
+2. B
+3. B
+4. A
+5. B
+D. Architecture Types in Embedded Systems
+1. B
+2. B
+3. B
+4. B
+5. A
+PART VI: MASTER GLOSSARY (BY TOPIC)
+All Must-Know Terms from Parts I–IV, grouped by topic for quick review.
+A. Embedded Systems Basics
+Embedded system: A computer hardware and software system designed for a specific function.
+Microprocessor: A processor that generally uses separate memory and peripheral circuits.
+Microcontroller: A small computer on one chip with processor, memory, and peripheral interfaces.
+SoC: A chip containing multiple processors and interfaces.
+FPGA: A configurable integrated circuit that can perform different functions.
+ASIC: An integrated circuit designed for a specific function.
+Sensor: Converts physical information into an electrical signal.
+Actuator: Produces or controls a physical action or output.
+RTOS: Operating system designed to manage tasks according to timing requirements.
+Firmware: Low-level software that controls a device.
+B. Firebase
+Firebase: Google's tools and services for building, managing, and growing applications.
+NoSQL: A type of database that does not require traditional tables.
+Realtime Database: Firebase cloud database designed for fast data synchronization.
+Firestore: Firebase NoSQL document database.
+Authentication: Checking a user's identity.
+FCM: Firebase service for messages and notifications.
+Crashlytics: Firebase service for crash reporting.
+API: A way for software applications to communicate.
+C. Processors in Embedded Systems
+Processor: The brain of an embedded system; takes input and produces output after processing data.
+Control Unit (CU): Fetches instructions from memory.
+Execution Unit (EU): Executes data transfer, data conversion, and program control instructions; contains the ALU.
+GPP: General Purpose Processor; flexible ISA for a wide range of tasks.
+Embedded Processor: A microprocessor designed specifically for embedded system needs.
+DSP: Digital Signal Processor; special-purpose processor for audio, video, and communication signals.
+Media Processor: SoC-based processor for real-time image or video streaming; a class of DSP.
+ASSP: Application-Specific Standard Product; a dedicated IC sold to multiple users.
+ASIP: Application-Specific Instruction Processor; combines a minimum ISA with configurable logic.
+D. Architecture Types in Embedded Systems
+System bus: Carries data and control signals between the processor, memory, and I/O modules.
+Von Neumann architecture: Architecture where software and data share the same memory and bus.
+Von Neumann bottleneck: Performance limit caused by instructions and data sharing the same bus.
+Harvard architecture: Architecture with separate memory modules and buses for instructions and data.
+I-cache / D-cache: Separate instruction cache and data cache used in Harvard architecture.
+RISC: Reduced Instruction Set Computer; small, simple instruction set with short execution time.
+CISC: Complex Instruction Set Computer; powerful instruction set with varied instruction lengths.
+Micro-op: A processor's internal instruction execution unit, decoded from a macro operation.
+Macro-op: The original instruction (e.g., an x86 instruction) before decoding into micro-ops.
+Instruction fusion: Combining multiple macro operations into a single micro operation for efficiency.
+

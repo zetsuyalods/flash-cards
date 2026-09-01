@@ -1,0 +1,347 @@
+{
+  "decks": [
+    {
+      "id": "embedded-basics",
+      "name": "Embedded Systems Basics",
+      "category": "Embedded Systems",
+      "cards": [
+        {
+          "id": "eb1",
+          "front": "What is an embedded system?",
+          "back": "A combination of computer hardware and software designed to perform a specific function, often as part of a larger system."
+        },
+        {
+          "id": "eb2",
+          "front": "What are the main parts of an embedded system?",
+          "back": "Hardware (physical electronic parts), Software (programs), and Firmware (low-level software stored in memory that controls the device)."
+        },
+        {
+          "id": "eb3",
+          "front": "What is firmware?",
+          "back": "Low-level software that directly controls a device's hardware and is usually stored in memory."
+        },
+        {
+          "id": "eb4",
+          "front": "What is the basic flow of an embedded system?",
+          "back": "Input/Sensor → Converter → Processor → Output/Actuator"
+        },
+        {
+          "id": "eb5",
+          "front": "What is the difference between a microprocessor and a microcontroller?",
+          "back": "A microprocessor usually needs separate memory and peripheral circuits. A microcontroller is a small computer on one chip that includes a processor, memory, and peripheral interfaces."
+        },
+        {
+          "id": "eb6",
+          "front": "What is a System on a Chip (SoC)?",
+          "back": "A chip that contains several processors and interfaces on one single chip."
+        },
+        {
+          "id": "eb7",
+          "front": "What is an FPGA?",
+          "back": "Field-Programmable Gate Array — an integrated circuit that can be configured to perform different functions. It is flexible."
+        },
+        {
+          "id": "eb8",
+          "front": "What is an ASIC?",
+          "back": "Application-Specific Integrated Circuit — a chip designed for a specific function. Efficient when the function is known and will not change."
+        },
+        {
+          "id": "eb9",
+          "front": "What does a sensor do?",
+          "back": "Converts physical information (temperature, pressure, motion) into an electrical signal."
+        },
+        {
+          "id": "eb10",
+          "front": "What does an actuator do?",
+          "back": "Produces or controls a physical action or output. Common examples: motors and solenoids."
+        },
+        {
+          "id": "eb11",
+          "front": "What is an A-D Converter?",
+          "back": "Changes an analog signal into a digital signal so the processor can understand it."
+        },
+        {
+          "id": "eb12",
+          "front": "What is a D-A Converter?",
+          "back": "Changes digital data back into an analog signal for output."
+        },
+        {
+          "id": "eb13",
+          "front": "What is a real-time embedded system?",
+          "back": "A system that must produce the required output within a defined time limit."
+        },
+        {
+          "id": "eb14",
+          "front": "What is an RTOS?",
+          "back": "Real-Time Operating System — helps control software execution and communication with hardware according to timing rules. Not every embedded system needs one."
+        },
+        {
+          "id": "eb15",
+          "front": "What are the characteristics of embedded systems?",
+          "back": "Task-specific, made of hardware/software/firmware, can be part of a larger system, use microprocessors or microcontrollers, often used for sensing and real-time computing in IoT, range from simple to complex, may need to complete tasks within a time limit."
+        },
+        {
+          "id": "eb16",
+          "front": "What are the types of embedded systems by scale?",
+          "back": "Small-scale (8-bit MCU), Medium-scale (16-32 bit MCUs), Sophisticated-scale (complex hardware, software, algorithms)."
+        },
+        {
+          "id": "eb17",
+          "front": "What are the four embedded software architectures?",
+          "back": "Simple control loop, Interrupt-controlled system, Cooperative multitasking, Preemptive multitasking/multithreading."
+        },
+        {
+          "id": "eb18",
+          "front": "What are the three types of embedded systems by portability?",
+          "back": "Mobile (small, portable), Networked (connected to a network), Standalone (performs specialized task independently)."
+        }
+      ]
+    },
+    {
+      "id": "firebase",
+      "name": "Firebase",
+      "category": "Embedded Systems",
+      "cards": [
+        {
+          "id": "fb1",
+          "front": "What is Firebase?",
+          "back": "A Google product that helps developers build, manage, and grow applications. It provides ready-made services for Android, iOS, web, and Unity apps, plus cloud storage and NoSQL databases."
+        },
+        {
+          "id": "fb2",
+          "front": "What is a NoSQL database?",
+          "back": "A type of database that does not require traditional table-based (SQL) organization."
+        },
+        {
+          "id": "fb3",
+          "front": "What is the Firebase Realtime Database?",
+          "back": "A cloud-based NoSQL database that can quickly manage and synchronize data in real time. Similar to a large JSON file."
+        },
+        {
+          "id": "fb4",
+          "front": "What is Cloud Firestore?",
+          "back": "A NoSQL document database that stores information in documents with key-value pairs."
+        },
+        {
+          "id": "fb5",
+          "front": "What is Firebase Authentication?",
+          "back": "A service that checks the identity of a user. Firebase provides tools that make user authentication easier to build and maintain."
+        },
+        {
+          "id": "fb6",
+          "front": "What is Firebase Remote Config?",
+          "back": "Allows developers to remotely change certain application settings, interface components, or behavior without pushing an app update."
+        },
+        {
+          "id": "fb7",
+          "front": "What is Firebase Cloud Messaging (FCM)?",
+          "back": "Provides a connection between applications and users for sending and receiving messages and notifications."
+        },
+        {
+          "id": "fb8",
+          "front": "What is Crashlytics?",
+          "back": "A Firebase service that provides real-time crash reports and details to help developers find and understand application problems."
+        },
+        {
+          "id": "fb9",
+          "front": "What is Firebase Performance Monitoring?",
+          "back": "Provides information about application performance so developers can review problems and make improvements."
+        },
+        {
+          "id": "fb10",
+          "front": "What is App Distribution?",
+          "back": "Allows developers to provide pre-release applications to trusted testers for testing and feedback."
+        },
+        {
+          "id": "fb11",
+          "front": "What is Google Analytics in Firebase?",
+          "back": "Provides information about application usage and user engagement. It measures actions or events within an application."
+        },
+        {
+          "id": "fb12",
+          "front": "What are Firebase Predictions?",
+          "back": "Uses machine learning with app analytics data to create user segments based on behavior and support other Firebase features."
+        },
+        {
+          "id": "fb13",
+          "front": "What are Firebase Dynamic Links?",
+          "back": "Used to direct users to specific content inside an application."
+        },
+        {
+          "id": "fb14",
+          "front": "What is Firebase A/B Testing?",
+          "back": "Compares different versions of an application experience to help determine which version works better."
+        },
+        {
+          "id": "fb15",
+          "front": "What are the three main Firebase feature groups?",
+          "back": "Build Better Applications (Realtime DB, Firestore, Auth, Remote Config, FCM), Improve App Quality (Crashlytics, Performance Monitoring, App Distribution), Grow Your App (Analytics, Predictions, Dynamic Links, A/B Testing)."
+        },
+        {
+          "id": "fb16",
+          "front": "What is an API?",
+          "back": "Application Programming Interface — allows two applications to communicate with each other. A bridge between software applications."
+        },
+        {
+          "id": "fb17",
+          "front": "What is a disadvantage of Firebase?",
+          "back": "NoSQL may be difficult for people who are used to SQL databases."
+        },
+        {
+          "id": "fb18",
+          "front": "Who created Firebase and when?",
+          "back": "James Tamplin and Andrew Lee. It began with an online chat service called Envolve. The modern Firebase architecture emerged around 2012."
+        }
+      ]
+    },
+    {
+      "id": "processors",
+      "name": "Processors in Embedded Systems",
+      "category": "Embedded Systems",
+      "cards": [
+        {
+          "id": "pr1",
+          "front": "What is a processor?",
+          "back": "The brain of an embedded system. It is the basic unit that takes inputs and produces an output after processing data."
+        },
+        {
+          "id": "pr2",
+          "front": "What are the main units of a processor?",
+          "back": "Control Unit (CU) — fetches instructions from memory. Execution Unit (EU) — contains the ALU and carries out data transfer, conversion, and program control tasks."
+        },
+        {
+          "id": "pr3",
+          "front": "What is the fetch-execute cycle?",
+          "back": "A processor repeatedly fetches and executes instructions in the same order they are fetched from memory."
+        },
+        {
+          "id": "pr4",
+          "front": "What is a General Purpose Processor (GPP)?",
+          "back": "A processor designed to execute a wide range of tasks with a flexible instruction set architecture (ISA) and typically a large amount of memory. Used in PCs, workstations, servers, routers, and switches."
+        },
+        {
+          "id": "pr5",
+          "front": "What are the three main types of instructions for a GPP?",
+          "back": "Arithmetic (ADD, SUB, MUL, DIV), Logical (AND, OR, XOR, NOT), and Control (JUMP, LOOP, RET, HALT)."
+        },
+        {
+          "id": "pr6",
+          "front": "What is a microprocessor?",
+          "back": "A single VLSI chip containing a CPU. It may include caches, a floating-point unit, and pipelining units. Generally needs separate memory and peripherals."
+        },
+        {
+          "id": "pr7",
+          "front": "What is a microcontroller?",
+          "back": "A single-chip VLSI unit (microcomputer) with limited computational power but enhanced I/O capability, on-chip program memory, and several functional units. Widely used in embedded systems for real-time control."
+        },
+        {
+          "id": "pr8",
+          "front": "Name 5 applications of microcontrollers.",
+          "back": "Appliances, industrial control systems, toys, medical devices, automotive systems, telecommunications equipment."
+        },
+        {
+          "id": "pr9",
+          "front": "What is an embedded processor?",
+          "back": "A microprocessor designed specifically for the needs of an embedded system. Small, power-efficient, and often integrates peripherals to save power."
+        },
+        {
+          "id": "pr10",
+          "front": "What is a DSP (Digital Signal Processor)?",
+          "back": "A special-purpose embedded processor built for the computational and power demands of audio, video, and communication applications. It measures, filters, and compresses digital or analog signals."
+        },
+        {
+          "id": "pr11",
+          "front": "Name 5 common DSP applications.",
+          "back": "Speech processing, image processing, medical processing, seismology, and radar."
+        },
+        {
+          "id": "pr12",
+          "front": "What is a media processor?",
+          "back": "Mostly used as an image or video processor. A microprocessor-based SoC designed to handle digital streaming data in real time. Considered a class of DSP."
+        },
+        {
+          "id": "pr13",
+          "front": "What is an ASSP?",
+          "back": "Application-Specific Standard Product — an integrated circuit dedicated to a specific application market and sold to more than one user. Combines digital, mixed-signal, and analog products."
+        },
+        {
+          "id": "pr14",
+          "front": "What is an ASIP?",
+          "back": "Application-Specific Instruction Processor — usually used in a SoC. Has a minimum ISA and configurable logic for building a custom instruction set."
+        },
+        {
+          "id": "pr15",
+          "front": "What is the difference between an ASSP and an ASIC?",
+          "back": "An ASSP is sold to multiple users in a specific market. When the same chip is sold to a single user, it is considered an ASIC."
+        }
+      ]
+    },
+    {
+      "id": "architecture",
+      "name": "Architecture Types",
+      "category": "Embedded Systems",
+      "cards": [
+        {
+          "id": "ar1",
+          "front": "What are the two main parts of embedded system architecture?",
+          "back": "Embedded hardware (processor, memory, bus, peripherals, I/O ports, controllers) and Embedded software (operating system and applications)."
+        },
+        {
+          "id": "ar2",
+          "front": "What is Von Neumann architecture?",
+          "back": "Also called Princeton architecture. Software and data share the same memory and bus. 'The program is data, and the data is the program.'"
+        },
+        {
+          "id": "ar3",
+          "front": "What is the Von Neumann bottleneck?",
+          "back": "A performance limitation caused by instructions and data sharing the same bus for transmission. Cache and branch-prediction technology can help address it."
+        },
+        {
+          "id": "ar4",
+          "front": "What is Harvard architecture?",
+          "back": "Architecture with two separate memory modules and two independent buses — one for instructions and one for data. They do not coexist in the same module."
+        },
+        {
+          "id": "ar5",
+          "front": "Which architecture is better suited for DSP and why?",
+          "back": "Harvard architecture — because separate instruction and data memory provides greater data-memory bandwidth, making it well suited for digital signal processing."
+        },
+        {
+          "id": "ar6",
+          "front": "What is the main practical difference between Von Neumann and Harvard in modern processors?",
+          "back": "Harvard splits L1 cache into I-cache (instruction cache) and D-cache (data cache), while Von Neumann uses a single cache."
+        },
+        {
+          "id": "ar7",
+          "front": "What is RISC?",
+          "back": "Reduced Instruction Set Computer — uses a small, limited, simple instruction set. Each instruction has a standard word length and short execution time. Uses many general-purpose registers to compensate."
+        },
+        {
+          "id": "ar8",
+          "front": "What is CISC?",
+          "back": "Complex Instruction Set Computer — features a powerful instruction set with different instruction lengths, which facilitates pipelined execution."
+        },
+        {
+          "id": "ar9",
+          "front": "How has the line between RISC and CISC blurred?",
+          "back": "Many CISC processors (like Intel x86) now translate instructions into RISC-like micro-ops through a decoder, gaining RISC-style efficiency internally."
+        },
+        {
+          "id": "ar10",
+          "front": "What is a micro-op (micro-operation)?",
+          "back": "A processor's internal instruction execution unit, decoded from a macro operation (the original x86 instruction)."
+        },
+        {
+          "id": "ar11",
+          "front": "What is instruction fusion?",
+          "back": "Combining multiple macro operations into a single micro operation for efficiency. For example, x86 CMP and JMP can fuse into a single compare-and-jump micro-op."
+        },
+        {
+          "id": "ar12",
+          "front": "Name the 5 common embedded microprocessor architectures.",
+          "back": "RISC, CISC, MIPS, PowerPC, and SuperH."
+        }
+      ]
+    }
+  ]
+}
