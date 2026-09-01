@@ -78,7 +78,7 @@ export default function StudyMode({ deck, onBack }) {
       </div>
       <div className="study-card-area">
         {cards.length > 0 && (
-          <FlashCard card={cards[currentIndex]} onMark={handleMark} />
+          <FlashCard key={cards[currentIndex].id} card={cards[currentIndex]} onMark={handleMark} />
         )}
       </div>
       <div className="study-score">

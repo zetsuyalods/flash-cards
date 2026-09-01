@@ -123,4 +123,29 @@
   border: 1px solid #e74c3c;
 }
 
+.btn-hint {
+  margin-top: 0.75rem;
+  padding: 0.4rem 1rem;
+  border: 1px solid #0f3460;
+  border-radius: 6px;
+  background: transparent;
+  color: #888;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.btn-hint:hover {
+  color: #eee;
+  border-color: #e94560;
+}
+
+.hint-text {
+  margin-top: 0.75rem;
+  font-size: 1.3rem;
+  color: #e94560;
+  letter-spacing: 3px;
+  font-family: monospace;
+}
+
 
