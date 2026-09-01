@@ -1,4 +1,5 @@
-const STORAGE_KEY = 'flashcards-data';
+const DATA_VERSION = Date.now();
+const STORAGE_KEY = `flashcards-data-${DATA_VERSION}`;
 
 export function loadData(defaultData) {
   try {

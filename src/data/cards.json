@@ -7,93 +7,103 @@
       "cards": [
         {
           "id": "eb1",
-          "front": "What is an embedded system?",
-          "back": "A combination of computer hardware and software designed to perform a specific function, often as part of a larger system."
+          "front": "A combination of computer hardware and software designed to perform a specific function, often working as part of a larger device.",
+          "back": "Embedded System"
         },
         {
           "id": "eb2",
-          "front": "What are the main parts of an embedded system?",
-          "back": "Hardware (physical electronic parts), Software (programs), and Firmware (low-level software stored in memory that controls the device)."
+          "front": "Low-level software that directly controls a device's hardware and is usually stored in memory.",
+          "back": "Firmware"
         },
         {
           "id": "eb3",
-          "front": "What is firmware?",
-          "back": "Low-level software that directly controls a device's hardware and is usually stored in memory."
+          "front": "A processor that generally requires separate memory and peripheral circuits to function.",
+          "back": "Microprocessor"
         },
         {
           "id": "eb4",
-          "front": "What is the basic flow of an embedded system?",
-          "back": "Input/Sensor → Converter → Processor → Output/Actuator"
+          "front": "A small computer on a single chip that includes a processor, memory, and peripheral interfaces.",
+          "back": "Microcontroller"
         },
         {
           "id": "eb5",
-          "front": "What is the difference between a microprocessor and a microcontroller?",
-          "back": "A microprocessor usually needs separate memory and peripheral circuits. A microcontroller is a small computer on one chip that includes a processor, memory, and peripheral interfaces."
+          "front": "An integrated circuit that contains several processors and interfaces all on one chip.",
+          "back": "SoC"
         },
         {
           "id": "eb6",
-          "front": "What is a System on a Chip (SoC)?",
-          "back": "A chip that contains several processors and interfaces on one single chip."
+          "front": "An integrated circuit that can be configured by a user to perform different custom hardware functions.",
+          "back": "FPGA"
         },
         {
           "id": "eb7",
-          "front": "What is an FPGA?",
-          "back": "Field-Programmable Gate Array — an integrated circuit that can be configured to perform different functions. It is flexible."
+          "front": "An integrated circuit designed for a specific function that is efficient when the function will not change.",
+          "back": "ASIC"
         },
         {
           "id": "eb8",
-          "front": "What is an ASIC?",
-          "back": "Application-Specific Integrated Circuit — a chip designed for a specific function. Efficient when the function is known and will not change."
+          "front": "A device that converts physical information from the environment into an electrical signal.",
+          "back": "Sensor"
         },
         {
           "id": "eb9",
-          "front": "What does a sensor do?",
-          "back": "Converts physical information (temperature, pressure, motion) into an electrical signal."
+          "front": "A component that changes an analog signal into a digital signal so a processor can read it.",
+          "back": "A-D Converter"
         },
         {
           "id": "eb10",
-          "front": "What does an actuator do?",
-          "back": "Produces or controls a physical action or output. Common examples: motors and solenoids."
+          "front": "A component that changes digital processor data into an analog signal.",
+          "back": "D-A Converter"
         },
         {
           "id": "eb11",
-          "front": "What is an A-D Converter?",
-          "back": "Changes an analog signal into a digital signal so the processor can understand it."
+          "front": "A device that produces or controls a physical action or output based on system signals.",
+          "back": "Actuator"
         },
         {
           "id": "eb12",
-          "front": "What is a D-A Converter?",
-          "back": "Changes digital data back into an analog signal for output."
+          "front": "An operating system designed to manage task execution and hardware communication according to strict timing rules.",
+          "back": "RTOS"
         },
         {
           "id": "eb13",
-          "front": "What is a real-time embedded system?",
-          "back": "A system that must produce the required output within a defined time limit."
+          "front": "Small and portable embedded systems, such as smartphones or wearables.",
+          "back": "Mobile Embedded Systems"
         },
         {
           "id": "eb14",
-          "front": "What is an RTOS?",
-          "back": "Real-Time Operating System — helps control software execution and communication with hardware according to timing rules. Not every embedded system needs one."
+          "front": "Embedded systems connected to a network to send or receive data from other systems.",
+          "back": "Networked Embedded Systems"
         },
         {
           "id": "eb15",
-          "front": "What are the characteristics of embedded systems?",
-          "back": "Task-specific, made of hardware/software/firmware, can be part of a larger system, use microprocessors or microcontrollers, often used for sensing and real-time computing in IoT, range from simple to complex, may need to complete tasks within a time limit."
+          "front": "Embedded systems that perform a specialized task independently without relying on a host system.",
+          "back": "Standalone Embedded Systems"
         },
         {
           "id": "eb16",
-          "front": "What are the types of embedded systems by scale?",
-          "back": "Small-scale (8-bit MCU), Medium-scale (16-32 bit MCUs), Sophisticated-scale (complex hardware, software, algorithms)."
+          "front": "Small-scale embedded systems that typically rely on an 8-bit microcontroller.",
+          "back": "Small-Scale Embedded Systems"
         },
         {
           "id": "eb17",
-          "front": "What are the four embedded software architectures?",
-          "back": "Simple control loop, Interrupt-controlled system, Cooperative multitasking, Preemptive multitasking/multithreading."
+          "front": "Software architecture where simple routines are repeatedly called in sequence to manage hardware functions.",
+          "back": "Simple Control Loop"
         },
         {
           "id": "eb18",
-          "front": "What are the three types of embedded systems by portability?",
-          "back": "Mobile (small, portable), Networked (connected to a network), Standalone (performs specialized task independently)."
+          "front": "Software architecture where specific hardware events pause main execution to trigger specific tasks.",
+          "back": "Interrupt-Controlled System"
+        },
+        {
+          "id": "eb19",
+          "front": "Software architecture where running tasks voluntarily cooperate to share processor time.",
+          "back": "Cooperative Multitasking"
+        },
+        {
+          "id": "eb20",
+          "front": "The process of finding and fixing problems in embedded software or hardware systems.",
+          "back": "Debugging"
         }
       ]
     },
@@ -104,93 +114,103 @@
       "cards": [
         {
           "id": "fb1",
-          "front": "What is Firebase?",
-          "back": "A Google product that helps developers build, manage, and grow applications. It provides ready-made services for Android, iOS, web, and Unity apps, plus cloud storage and NoSQL databases."
+          "front": "A Google suite of cloud-based tools and services for building, managing, and growing mobile and web applications.",
+          "back": "Firebase"
         },
         {
           "id": "fb2",
-          "front": "What is a NoSQL database?",
-          "back": "A type of database that does not require traditional table-based (SQL) organization."
+          "front": "A database model that does not require traditional table-based structures or rigid schemas.",
+          "back": "NoSQL"
         },
         {
           "id": "fb3",
-          "front": "What is the Firebase Realtime Database?",
-          "back": "A cloud-based NoSQL database that can quickly manage and synchronize data in real time. Similar to a large JSON file."
+          "front": "Firebase's original cloud-based NoSQL database optimized for fast data synchronization across clients, structured like a large JSON file.",
+          "back": "Realtime Database"
         },
         {
           "id": "fb4",
-          "front": "What is Cloud Firestore?",
-          "back": "A NoSQL document database that stores information in documents with key-value pairs."
+          "front": "A flexible, scalable NoSQL document database provided by Firebase that organizes data into key-value documents and collections.",
+          "back": "Cloud Firestore"
         },
         {
           "id": "fb5",
-          "front": "What is Firebase Authentication?",
-          "back": "A service that checks the identity of a user. Firebase provides tools that make user authentication easier to build and maintain."
+          "front": "Firebase service that checks and manages the identity of application users.",
+          "back": "Firebase Authentication"
         },
         {
           "id": "fb6",
-          "front": "What is Firebase Remote Config?",
-          "back": "Allows developers to remotely change certain application settings, interface components, or behavior without pushing an app update."
+          "front": "Service allowing developers to remotely change application appearance or behavior without publishing a new app version.",
+          "back": "Remote Config"
         },
         {
           "id": "fb7",
-          "front": "What is Firebase Cloud Messaging (FCM)?",
-          "back": "Provides a connection between applications and users for sending and receiving messages and notifications."
+          "front": "Cross-platform messaging service that enables sending notification messages and data messages to users.",
+          "back": "FCM"
         },
         {
           "id": "fb8",
-          "front": "What is Crashlytics?",
-          "back": "A Firebase service that provides real-time crash reports and details to help developers find and understand application problems."
+          "front": "Service providing real-time crash reporting and actionable stack traces to help debug app stability.",
+          "back": "Crashlytics"
         },
         {
           "id": "fb9",
-          "front": "What is Firebase Performance Monitoring?",
-          "back": "Provides information about application performance so developers can review problems and make improvements."
+          "front": "Firebase service providing insight into the performance characteristics and network latencies of an application.",
+          "back": "Performance Monitoring"
         },
         {
           "id": "fb10",
-          "front": "What is App Distribution?",
-          "back": "Allows developers to provide pre-release applications to trusted testers for testing and feedback."
+          "front": "Service allowing developers to distribute pre-release versions of apps to trusted testers for early feedback.",
+          "back": "App Distribution"
         },
         {
           "id": "fb11",
-          "front": "What is Google Analytics in Firebase?",
-          "back": "Provides information about application usage and user engagement. It measures actions or events within an application."
+          "front": "Analytics tool measuring user engagement, event tracking, and in-app behavior metrics.",
+          "back": "Google Analytics"
         },
         {
           "id": "fb12",
-          "front": "What are Firebase Predictions?",
-          "back": "Uses machine learning with app analytics data to create user segments based on behavior and support other Firebase features."
+          "front": "Tool using machine learning on analytics data to group users into segments based on predicted behaviors.",
+          "back": "Predictions"
         },
         {
           "id": "fb13",
-          "front": "What are Firebase Dynamic Links?",
-          "back": "Used to direct users to specific content inside an application."
+          "front": "Smart URLs that direct existing or potential users to specific content locations inside an app.",
+          "back": "Dynamic Links"
         },
         {
           "id": "fb14",
-          "front": "What is Firebase A/B Testing?",
-          "back": "Compares different versions of an application experience to help determine which version works better."
+          "front": "Feature comparing different user experience variations against each other to identify the most effective design or setting.",
+          "back": "A/B Testing"
         },
         {
           "id": "fb15",
-          "front": "What are the three main Firebase feature groups?",
-          "back": "Build Better Applications (Realtime DB, Firestore, Auth, Remote Config, FCM), Improve App Quality (Crashlytics, Performance Monitoring, App Distribution), Grow Your App (Analytics, Predictions, Dynamic Links, A/B Testing)."
+          "front": "The online chat service built by James Tamplin and Andrew Lee from which Firebase originally evolved.",
+          "back": "Envolve"
         },
         {
           "id": "fb16",
-          "front": "What is an API?",
-          "back": "Application Programming Interface — allows two applications to communicate with each other. A bridge between software applications."
+          "front": "A bridge or set of defined protocols allowing two software applications to communicate with each other.",
+          "back": "API"
         },
         {
           "id": "fb17",
-          "front": "What is a disadvantage of Firebase?",
-          "back": "NoSQL may be difficult for people who are used to SQL databases."
+          "front": "The specific Firebase category containing Realtime Database, Firestore, Authentication, Remote Config, and FCM.",
+          "back": "Build Better Applications"
         },
         {
           "id": "fb18",
-          "front": "Who created Firebase and when?",
-          "back": "James Tamplin and Andrew Lee. It began with an online chat service called Envolve. The modern Firebase architecture emerged around 2012."
+          "front": "The specific Firebase category containing Crashlytics, Performance Monitoring, and App Distribution.",
+          "back": "Improve App Quality"
+        },
+        {
+          "id": "fb19",
+          "front": "The specific Firebase category containing Analytics, Predictions, Dynamic Links, and A/B Testing.",
+          "back": "Grow Your App"
+        },
+        {
+          "id": "fb20",
+          "front": "An advantage of Firebase that makes it accessible for beginner projects and early prototyping.",
+          "back": "Free Plans"
         }
       ]
     },
@@ -201,78 +221,103 @@
       "cards": [
         {
           "id": "pr1",
-          "front": "What is a processor?",
-          "back": "The brain of an embedded system. It is the basic unit that takes inputs and produces an output after processing data."
+          "front": "The main computational component of an embedded system that accepts inputs, processes data, and yields output.",
+          "back": "Processor"
         },
         {
           "id": "pr2",
-          "front": "What are the main units of a processor?",
-          "back": "Control Unit (CU) — fetches instructions from memory. Execution Unit (EU) — contains the ALU and carries out data transfer, conversion, and program control tasks."
+          "front": "The processor sub-unit responsible for fetching instructions from memory.",
+          "back": "Control Unit"
         },
         {
           "id": "pr3",
-          "front": "What is the fetch-execute cycle?",
-          "back": "A processor repeatedly fetches and executes instructions in the same order they are fetched from memory."
+          "front": "The processor sub-unit containing the ALU and circuits executing data transfer, conversion, and program control logic.",
+          "back": "Execution Unit"
         },
         {
           "id": "pr4",
-          "front": "What is a General Purpose Processor (GPP)?",
-          "back": "A processor designed to execute a wide range of tasks with a flexible instruction set architecture (ISA) and typically a large amount of memory. Used in PCs, workstations, servers, routers, and switches."
+          "front": "The fundamental operational sequence where a processor retrieves an instruction and executes it repeatedly in order.",
+          "back": "Fetch-Execute Cycle"
         },
         {
           "id": "pr5",
-          "front": "What are the three main types of instructions for a GPP?",
-          "back": "Arithmetic (ADD, SUB, MUL, DIV), Logical (AND, OR, XOR, NOT), and Control (JUMP, LOOP, RET, HALT)."
+          "front": "A processor with a flexible instruction set architecture designed to handle a broad range of computing tasks.",
+          "back": "GPP"
         },
         {
           "id": "pr6",
-          "front": "What is a microprocessor?",
-          "back": "A single VLSI chip containing a CPU. It may include caches, a floating-point unit, and pipelining units. Generally needs separate memory and peripherals."
+          "front": "Category of instructions performing basic mathematical operations like addition, subtraction, or multiplication.",
+          "back": "Arithmetic Instructions"
         },
         {
           "id": "pr7",
-          "front": "What is a microcontroller?",
-          "back": "A single-chip VLSI unit (microcomputer) with limited computational power but enhanced I/O capability, on-chip program memory, and several functional units. Widely used in embedded systems for real-time control."
+          "front": "Category of instructions performing comparisons and logical bit operations like AND, OR, XOR, or NOT.",
+          "back": "Logical Instructions"
         },
         {
           "id": "pr8",
-          "front": "Name 5 applications of microcontrollers.",
-          "back": "Appliances, industrial control systems, toys, medical devices, automotive systems, telecommunications equipment."
+          "front": "Category of instructions managing program flow, including conditional jumps, loops, and return statements.",
+          "back": "Control Instructions"
         },
         {
           "id": "pr9",
-          "front": "What is an embedded processor?",
-          "back": "A microprocessor designed specifically for the needs of an embedded system. Small, power-efficient, and often integrates peripherals to save power."
+          "front": "A single VLSI chip housing a CPU that typically relies on external peripherals and memory buses.",
+          "back": "Microprocessor"
         },
         {
           "id": "pr10",
-          "front": "What is a DSP (Digital Signal Processor)?",
-          "back": "A special-purpose embedded processor built for the computational and power demands of audio, video, and communication applications. It measures, filters, and compresses digital or analog signals."
+          "front": "An integrated single-chip microcomputer housing a processor CPU, limited program memory, and built-in I/O capabilities.",
+          "back": "Microcontroller"
         },
         {
           "id": "pr11",
-          "front": "Name 5 common DSP applications.",
-          "back": "Speech processing, image processing, medical processing, seismology, and radar."
+          "front": "A microprocessor specifically tailored for embedded systems, integrating peripherals on-chip to save power and space.",
+          "back": "Embedded Processor"
         },
         {
           "id": "pr12",
-          "front": "What is a media processor?",
-          "back": "Mostly used as an image or video processor. A microprocessor-based SoC designed to handle digital streaming data in real time. Considered a class of DSP."
+          "front": "A specialized embedded processor engineered for high-speed mathematical operations required in processing audio, video, and signals.",
+          "back": "DSP"
         },
         {
           "id": "pr13",
-          "front": "What is an ASSP?",
-          "back": "Application-Specific Standard Product — an integrated circuit dedicated to a specific application market and sold to more than one user. Combines digital, mixed-signal, and analog products."
+          "front": "A microprocessor-based system-on-a-chip designed explicitly for real-time digital streaming video or image rendering.",
+          "back": "Media Processor"
         },
         {
           "id": "pr14",
-          "front": "What is an ASIP?",
-          "back": "Application-Specific Instruction Processor — usually used in a SoC. Has a minimum ISA and configurable logic for building a custom instruction set."
+          "front": "An integrated circuit dedicated to a specific application domain and commercialized to multiple client users.",
+          "back": "ASSP"
         },
         {
           "id": "pr15",
-          "front": "What is the difference between an ASSP and an ASIC?",
-          "back": "An ASSP is sold to multiple users in a specific market. When the same chip is sold to a single user, it is considered an ASIC."
+          "front": "A SoC processor built by pairing a minimal core instruction set architecture with configurable logic for custom instructions.",
+          "back": "ASIP"
+        },
+        {
+          "id": "pr16",
+          "front": "The hardware density standard representing full CPU integration onto a single silicon die.",
+          "back": "VLSI"
+        },
+        {
+          "id": "pr17",
+          "front": "Application domain typically handled by microprocessors rather than microcontrollers due to high compute demands.",
+          "back": "Personal Computers"
+        },
+        {
+          "id": "pr18",
+          "front": "Application domain ideal for microcontrollers due to integrated real-time control peripherals.",
+          "back": "Automotive Systems"
+        },
+        {
+          "id": "pr19",
+          "front": "Common DSP field analyzing wave data, sensor echoes, and radio detection patterns.",
+          "back": "Radar"
+        },
+        {
+          "id": "pr20",
+          "front": "Specialized processor type that can easily outperform general-purpose processors in graphics rendering tasks.",
+          "back": "GPU"
         }
       ]
     },
@@ -283,63 +328,424 @@
       "cards": [
         {
           "id": "ar1",
-          "front": "What are the two main parts of embedded system architecture?",
-          "back": "Embedded hardware (processor, memory, bus, peripherals, I/O ports, controllers) and Embedded software (operating system and applications)."
+          "front": "The shared physical bus carrying data, address, and control signals between CPU, memory, and peripheral modules.",
+          "back": "System Bus"
         },
         {
           "id": "ar2",
-          "front": "What is Von Neumann architecture?",
-          "back": "Also called Princeton architecture. Software and data share the same memory and bus. 'The program is data, and the data is the program.'"
+          "front": "Computer architecture where instructions and data share the same single memory space and unified transmission bus.",
+          "back": "Von Neumann Architecture"
         },
         {
           "id": "ar3",
-          "front": "What is the Von Neumann bottleneck?",
-          "back": "A performance limitation caused by instructions and data sharing the same bus for transmission. Cache and branch-prediction technology can help address it."
+          "front": "The performance limitation that occurs when shared instruction and data access limits memory bus throughput.",
+          "back": "Von Neumann Bottleneck"
         },
         {
           "id": "ar4",
-          "front": "What is Harvard architecture?",
-          "back": "Architecture with two separate memory modules and two independent buses — one for instructions and one for data. They do not coexist in the same module."
+          "front": "Computer architecture utilizing separate memory units and dedicated independent buses for instructions versus data.",
+          "back": "Harvard Architecture"
         },
         {
           "id": "ar5",
-          "front": "Which architecture is better suited for DSP and why?",
-          "back": "Harvard architecture — because separate instruction and data memory provides greater data-memory bandwidth, making it well suited for digital signal processing."
+          "front": "Dedicated high-speed memory cache restricted exclusively to storing code instructions in a Harvard structure.",
+          "back": "I-cache"
         },
         {
           "id": "ar6",
-          "front": "What is the main practical difference between Von Neumann and Harvard in modern processors?",
-          "back": "Harvard splits L1 cache into I-cache (instruction cache) and D-cache (data cache), while Von Neumann uses a single cache."
+          "front": "Dedicated high-speed memory cache restricted exclusively to storing operational data variables in a Harvard structure.",
+          "back": "D-cache"
         },
         {
           "id": "ar7",
-          "front": "What is RISC?",
-          "back": "Reduced Instruction Set Computer — uses a small, limited, simple instruction set. Each instruction has a standard word length and short execution time. Uses many general-purpose registers to compensate."
+          "front": "Processor architecture designed around a small, uniform instruction set optimized for quick execution in a pipeline.",
+          "back": "RISC"
         },
         {
           "id": "ar8",
-          "front": "What is CISC?",
-          "back": "Complex Instruction Set Computer — features a powerful instruction set with different instruction lengths, which facilitates pipelined execution."
+          "front": "Processor architecture featuring a diverse, complex instruction set with varying instruction lengths.",
+          "back": "CISC"
         },
         {
           "id": "ar9",
-          "front": "How has the line between RISC and CISC blurred?",
-          "back": "Many CISC processors (like Intel x86) now translate instructions into RISC-like micro-ops through a decoder, gaining RISC-style efficiency internally."
+          "front": "Internal elementary operations executed inside a modern processor core after decoding complex macro instructions.",
+          "back": "Micro-op"
         },
         {
           "id": "ar10",
-          "front": "What is a micro-op (micro-operation)?",
-          "back": "A processor's internal instruction execution unit, decoded from a macro operation (the original x86 instruction)."
+          "front": "The original high-level machine code instruction (such as standard x86) prior to internal CPU micro-op decoding.",
+          "back": "Macro-op"
         },
         {
           "id": "ar11",
-          "front": "What is instruction fusion?",
-          "back": "Combining multiple macro operations into a single micro operation for efficiency. For example, x86 CMP and JMP can fuse into a single compare-and-jump micro-op."
+          "front": "The internal optimization process of merging multiple decoded macro-ops into a single executed micro-op.",
+          "back": "Instruction Fusion"
         },
         {
           "id": "ar12",
-          "front": "Name the 5 common embedded microprocessor architectures.",
-          "back": "RISC, CISC, MIPS, PowerPC, and SuperH."
+          "front": "Architectural feature in modern x86 chips used to break down complex macro instructions into RISC-like execution units.",
+          "back": "Instruction Decoder"
+        },
+        {
+          "id": "ar13",
+          "front": "Processor architecture category featuring legacy x86 instructions.",
+          "back": "CISC Architecture"
+        },
+        {
+          "id": "ar14",
+          "front": "Common embedded architecture family known for simple instructions, widely utilized alongside ARM and MIPS.",
+          "back": "RISC Architecture"
+        },
+        {
+          "id": "ar15",
+          "front": "Hardware technique used in processors to overlay execution steps of multiple instructions in a sequence.",
+          "back": "Pipelining"
+        },
+        {
+          "id": "ar16",
+          "front": "High-speed memory component positioned between CPU and main memory to reduce bus delays.",
+          "back": "Cache Memory"
+        },
+        {
+          "id": "ar17",
+          "front": "Alternative name for Von Neumann architecture based on the location where it was researched.",
+          "back": "Princeton Architecture"
+        },
+        {
+          "id": "ar18",
+          "front": "Primary architectural reason Harvard architecture excels at digital signal processing (DSP) operations.",
+          "back": "Greater Data-Memory Bandwidth"
+        },
+        {
+          "id": "ar19",
+          "front": "Internal register architecture strategy used by RISC systems to balance reduced command complexity.",
+          "back": "Large General-Purpose Register File"
+        },
+        {
+          "id": "ar20",
+          "front": "Major processor architecture standard listed alongside RISC, CISC, MIPS, and PowerPC as widely used in embedded microprocessors.",
+          "back": "SuperH"
+        }
+      ]
+    },
+    {
+      "id": "robotics",
+      "name": "Robotics",
+      "category": "Robotics",
+      "cards": [
+        {
+          "id": "ro1",
+          "front": "A re-programmable, multifunctional, automatic machine designed to replace humans in hazardous or repetitive work.",
+          "back": "Robot"
+        },
+        {
+          "id": "ro2",
+          "front": "The science and field of study focused on designing and building efficient robots.",
+          "back": "Robotics"
+        },
+        {
+          "id": "ro3",
+          "front": "The Czech writer who introduced the word 'robot' in his 1920 play R.U.R.",
+          "back": "Karel Čapek"
+        },
+        {
+          "id": "ro4",
+          "front": "The science fiction writer who coined the word 'robotics' and created the Three Laws of Robotics.",
+          "back": "Isaac Asimov"
+        },
+        {
+          "id": "ro5",
+          "front": "The name of the world's first industrial robotic arm.",
+          "back": "Unimate"
+        },
+        {
+          "id": "ro6",
+          "front": "The fundamental robotics law stating that a robot may not harm humanity, or through inaction allow humanity to come to harm.",
+          "back": "Zeroth Law of Robotics"
+        },
+        {
+          "id": "ro7",
+          "front": "Robot component that acts on or directly affects the surrounding environment, such as a gripper or welding torch.",
+          "back": "Effector"
+        },
+        {
+          "id": "ro8",
+          "front": "Robot component that converts energy into motion to move a robot's mechanical parts.",
+          "back": "Actuator"
+        },
+        {
+          "id": "ro9",
+          "front": "The processing system or 'brain' of a robot that handles input signals and directs its actions.",
+          "back": "Controller"
+        },
+        {
+          "id": "ro10",
+          "front": "A self-contained, self-supporting robot that relies entirely on its own internal processing system rather than external control.",
+          "back": "Autonomous Robot"
+        },
+        {
+          "id": "ro11",
+          "front": "A robot guided by a human operator from a distance, typically used for dangerous or hazardous tasks.",
+          "back": "Remote-Controlled Robot"
+        },
+        {
+          "id": "ro12",
+          "front": "Software-based entities or programs that exist only inside a computer system rather than as physical machines.",
+          "back": "Virtual Robots"
+        },
+        {
+          "id": "ro13",
+          "front": "Mobile robots that move using legs (typically four or more) to navigate rough or rocky terrain.",
+          "back": "Walking Robots"
+        },
+        {
+          "id": "ro14",
+          "front": "Robots that perform repetitive tasks from a fixed position without traveling, such as industrial assembly line machines.",
+          "back": "Stationary Robots"
+        },
+        {
+          "id": "ro15",
+          "front": "An annual international robotics competition founded in 1996 that promotes AI and robotics through challenges like robot soccer.",
+          "back": "RoboCup"
+        },
+        {
+          "id": "ro16",
+          "front": "The international robot-soccer organization that hosts competitive leagues including HuroCup, RoboSot, and AndroSot.",
+          "back": "FIRA"
+        },
+        {
+          "id": "ro17",
+          "front": "A global non-profit organization that promotes STEM education through annual robotics competitions for youth.",
+          "back": "World Robot Olympiad"
+        },
+        {
+          "id": "ro18",
+          "front": "A competitive sport where two autonomous robots attempt to locate each other and push their opponent out of a circular ring.",
+          "back": "Robot-Sumo"
+        },
+        {
+          "id": "ro19",
+          "front": "An educational program in the Philippines providing robotics and AI skills for students from Grade 4 to 12.",
+          "back": "Philippine Robotics Academy"
+        },
+        {
+          "id": "ro20",
+          "front": "The award-winning space suit project created by the Philippine Robotics National Team to address astronaut muscle and bone loss in microgravity.",
+          "back": "Project Mu.S.C.A."
+        }
+      ]
+    },
+    {
+      "id": "arduino",
+      "name": "Arduino & Microcontrollers",
+      "category": "Robotics",
+      "cards": [
+        {
+          "id": "au1",
+          "front": "An open-source single-board microcontroller platform created to make interactive electronics projects accessible.",
+          "back": "Arduino"
+        },
+        {
+          "id": "au2",
+          "front": "The pre-loaded software on a microcontroller chip that enables direct code uploads via USB without external hardware programmers.",
+          "back": "Bootloader"
+        },
+        {
+          "id": "au3",
+          "front": "The cross-platform software environment used to compose, compile, and upload code to an Arduino board.",
+          "back": "Arduino IDE"
+        },
+        {
+          "id": "au4",
+          "front": "An all-in-one integrated circuit chip containing a processor core, fixed RAM, ROM, and I/O peripheral pins on a single die.",
+          "back": "Microcontroller"
+        },
+        {
+          "id": "au5",
+          "front": "A processing chip that lacks internal RAM, ROM, or I/O ports, using external buses to interface with peripheral hardware.",
+          "back": "Microprocessor"
+        },
+        {
+          "id": "au6",
+          "front": "The specific primary 8-bit microcontroller chip used on the standard Arduino Uno board.",
+          "back": "ATmega328"
+        },
+        {
+          "id": "au7",
+          "front": "A custom code program written specifically to be executed on an Arduino board.",
+          "back": "Sketch"
+        },
+        {
+          "id": "au8",
+          "front": "A physical input or output hardware connection header on a microcontroller circuit board.",
+          "back": "Pin"
+        },
+        {
+          "id": "au9",
+          "front": "A binary electrical state or signal that is strictly either HIGH or LOW (on/off).",
+          "back": "Digital"
+        },
+        {
+          "id": "au10",
+          "front": "A continuous or multi-level signal representation ranging across a spectrum of values (such as 0–255 for PWM).",
+          "back": "Analog"
+        },
+        {
+          "id": "au11",
+          "front": "The Arduino programming function used to set an individual pin's behavior as either an INPUT or OUTPUT.",
+          "back": "pinMode()"
+        },
+        {
+          "id": "au12",
+          "front": "The Arduino programming command used to send a digital HIGH or LOW voltage output to a designated pin.",
+          "back": "digitalWrite()"
+        },
+        {
+          "id": "au13",
+          "front": "The Arduino timing command that pauses program execution for a specified number of milliseconds.",
+          "back": "delay()"
+        },
+        {
+          "id": "au14",
+          "front": "The fundamental physical law defining the linear relationship between voltage, current, and resistance (V = IR).",
+          "back": "Ohm's Law"
+        },
+        {
+          "id": "au15",
+          "front": "A modular expansion board that plugs directly into the top of an Arduino to add capabilities like WiFi or cellular connectivity.",
+          "back": "Shield"
+        },
+        {
+          "id": "au16",
+          "front": "A Philippine-manufactured Arduino-compatible microcontroller board based on the ATmega168 or ATmega328 microchip.",
+          "back": "GizDuino"
+        },
+        {
+          "id": "au17",
+          "front": "A free web-based 3D modeling and circuit simulation software by Autodesk used to model Arduino projects virtually.",
+          "back": "Tinkercad Circuits"
+        },
+        {
+          "id": "au18",
+          "front": "The output method on select digital pins that simulates an analog signal by modulating pulse width timing.",
+          "back": "PWM"
+        },
+        {
+          "id": "au19",
+          "front": "The recommended external DC input voltage range required to properly power an Arduino Uno board.",
+          "back": "7–12V"
+        },
+        {
+          "id": "au20",
+          "front": "The operational clock frequency of the main crystal oscillator on an Arduino Uno board.",
+          "back": "16 MHz"
+        }
+      ]
+    },
+    {
+      "id": "actuators-sensors",
+      "name": "Actuators & Sensors",
+      "category": "Robotics",
+      "cards": [
+        {
+          "id": "as1",
+          "front": "A hardware device that converts electrical, fluid, or thermal energy into physical motion to control a mechanism.",
+          "back": "Actuator"
+        },
+        {
+          "id": "as2",
+          "front": "A motor actuator that uses closed-loop feedback (position sensor, motor, and controller) to achieve precise angular positioning.",
+          "back": "Servo Motor"
+        },
+        {
+          "id": "as3",
+          "front": "An electromechanical device that uses an energized magnetic coil to actuate a plunger and control fluid or gas flow.",
+          "back": "Solenoid Valve"
+        },
+        {
+          "id": "as4",
+          "front": "A circuit module containing electrically operated switches used to control high-power loads using low-power control signals.",
+          "back": "Relay Module"
+        },
+        {
+          "id": "as5",
+          "front": "An actuator engineered specifically to convert energy into straight-line motion along a single path.",
+          "back": "Linear Actuator"
+        },
+        {
+          "id": "as6",
+          "front": "An electric motor built without mechanical brushes, utilizing electronic commutation for higher efficiency and longevity.",
+          "back": "Brushless Motor"
+        },
+        {
+          "id": "as7",
+          "front": "Actuator mechanism that generates motion by heating specific metal alloys designed to return to their original pre-deformed shape.",
+          "back": "Shape Memory Alloy Actuator"
+        },
+        {
+          "id": "as8",
+          "front": "A high-force actuator system that generates mechanical motion by pumping pressurized hydraulic fluid into a cylinder-piston assembly.",
+          "back": "Hydraulic Actuator"
+        },
+        {
+          "id": "as9",
+          "front": "A hardware device that detects environmental changes or physical properties and converts them into readable electronic signals.",
+          "back": "Sensor"
+        },
+        {
+          "id": "as10",
+          "front": "Distance sensor that emits sonar pulses to calculate object range via acoustic echo timings.",
+          "back": "Ultrasonic Distance Sensor"
+        },
+        {
+          "id": "as11",
+          "front": "Light-sensitive variable resistor whose electrical resistance decreases as ambient light exposure increases.",
+          "back": "Light Dependent Resistor"
+        },
+        {
+          "id": "as12",
+          "front": "A combined environmental sensor module using a capacitive sensor for humidity and a thermistor for temperature.",
+          "back": "Temperature/Humidity Sensor"
+        },
+        {
+          "id": "as13",
+          "front": "A sensor that measures proper acceleration forces to determine orientation, tilt, or dynamic motion in devices.",
+          "back": "Accelerometer"
+        },
+        {
+          "id": "as14",
+          "front": "A sensor that tracks orientation by measuring angular velocity around an axis using a spinning mass or MEMS structure.",
+          "back": "Gyroscope Sensor"
+        },
+        {
+          "id": "as15",
+          "front": "A directional sensor that detects the strength and orientation of magnetic fields, commonly utilized for digital compasses.",
+          "back": "Magnetometer"
+        },
+        {
+          "id": "as16",
+          "front": "A non-contact sensor that detects presence, approach, or distance of nearby objects without physical touch.",
+          "back": "Proximity Sensor"
+        },
+        {
+          "id": "as17",
+          "front": "Metal-oxide semiconductor gas sensor module engineered to specifically detect flammable gases and smoke.",
+          "back": "MQ-Series Gas Sensor"
+        },
+        {
+          "id": "as18",
+          "front": "A photoplethysmography sensor that uses light absorption to detect subcutaneous blood volume changes and calculate pulse rate.",
+          "back": "Heart Rate Sensor"
+        },
+        {
+          "id": "as19",
+          "front": "An ion-selective electrode sensor that measures the acidity or alkalinity of liquid solutions by measuring potential differences.",
+          "back": "pH Sensor"
+        },
+        {
+          "id": "as20",
+          "front": "Wireless technology using radio frequency signals to exchange data stored on passive or active tags.",
+          "back": "RFID"
         }
       ]
     }

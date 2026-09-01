@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './FlashCard.css';
 
 function checkAnswer(userAnswer, correctAnswer) {
@@ -17,9 +17,24 @@ export default function FlashCard({ card, onMark }) {
   const [userAnswer, setUserAnswer] = useState('');
   const [result, setResult] = useState(null);
 
+  useEffect(() => {
+    setUserAnswer('');
+    setResult(null);
+    setFlipped(false);
+  }, [card.id]);
+
+  useEffect(() => {
+    if (result !== null) {
+      const timer = setTimeout(() => {
+        onMark(result ? 'correct' : 'incorrect');
+      }, 1500);
+      return () => clearTimeout(timer);
+    }
+  }, [result, onMark]);
+
   const handleCheck = (e) => {
     e.stopPropagation();
-    if (!userAnswer.trim()) return;
+    if (!userAnswer.trim() || result !== null) return;
     const isCorrect = checkAnswer(userAnswer, card.back);
     setResult(isCorrect);
     setFlipped(true);
@@ -34,13 +49,6 @@ export default function FlashCard({ card, onMark }) {
     if (e.key === 'Enter' && result === null) {
       handleCheck(e);
     }
-  };
-
-  const handleMarkAndReset = (status) => {
-    onMark(status);
-    setUserAnswer('');
-    setResult(null);
-    setFlipped(false);
   };
 
   return (
@@ -74,16 +82,6 @@ export default function FlashCard({ card, onMark }) {
           <p>{card.back}</p>
         </div>
       </div>
-      {flipped && result !== null && onMark && (
-        <div className="mark-buttons" onClick={(e) => e.stopPropagation()}>
-          <button className="mark-btn correct" onClick={() => handleMarkAndReset('correct')}>
-            Got it right
-          </button>
-          <button className="mark-btn incorrect" onClick={() => handleMarkAndReset('incorrect')}>
-            Got it wrong
-          </button>
-        </div>
-      )}
     </div>
   );
 }
