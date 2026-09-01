@@ -1,0 +1,197 @@
+================================================================================
+            ROBOTICS, ARDUINO, AND ACTUATORS/SENSORS REVIEWER QUIZ
+================================================================================
+
+--------------------------------------------------------------------------------
+PART I: ROBOTICS (20 QUESTIONS)
+--------------------------------------------------------------------------------
+
+1. Definition: A re-programmable, multifunctional, automatic machine designed to replace humans in hazardous or repetitive work[cite: 2].
+   Answer: Robot
+
+2. Definition: The science and field of study focused on designing and building efficient robots[cite: 2].
+   Answer: Robotics
+
+3. Definition: The Czech writer who introduced the word "robot" in his 1920 play R.U.R.[cite: 2]
+   Answer: Karel Čapek
+
+4. Definition: The science fiction writer who coined the word "robotics" and created the Three Laws of Robotics[cite: 2].
+   Answer: Isaac Asimov
+
+5. Definition: The name of the world's first industrial robotic arm[cite: 2].
+   Answer: Unimate
+
+6. Definition: The fundamental robotics law stating that a robot may not harm humanity, or through inaction allow humanity to come to harm[cite: 2].
+   Answer: Zeroth Law of Robotics
+
+7. Definition: Robot component that acts on or directly affects the surrounding environment, such as a gripper or welding torch[cite: 2].
+   Answer: Effector
+
+8. Definition: Robot component that converts energy into motion to move a robot's mechanical parts[cite: 2].
+   Answer: Actuator
+
+9. Definition: The processing system or "brain" of a robot that handles input signals and directs its actions[cite: 2].
+   Answer: Controller
+
+10. Definition: A self-contained, self-supporting robot that relies entirely on its own internal processing system rather than external control[cite: 2].
+    Answer: Autonomous Robot
+
+11. Definition: A robot guided by a human operator from a distance, typically used for dangerous or hazardous tasks[cite: 2].
+    Answer: Remote-Controlled Robot
+
+12. Definition: Software-based entities or programs that exist only inside a computer system rather than as physical machines[cite: 2].
+    Answer: Virtual Robots
+
+13. Definition: Mobile robots that move using legs (typically four or more) to navigate rough or rocky terrain[cite: 2].
+    Answer: Walking Robots
+
+14. Definition: Robots that perform repetitive tasks from a fixed position without traveling, such as industrial assembly line machines[cite: 2].
+    Answer: Stationary Robots
+
+15. Definition: An annual international robotics competition founded in 1996 that promotes AI and robotics through challenges like robot soccer[cite: 2].
+    Answer: RoboCup
+
+16. Definition: The international robot-soccer organization that hosts competitive leagues including HuroCup, RoboSot, and AndroSot[cite: 2].
+    Answer: FIRA (Federation of International Robot-soccer Association)
+
+17. Definition: A global non-profit organization that promotes STEM education through annual robotics competitions for youth[cite: 2].
+    Answer: World Robot Olympiad (WRO)
+
+18. Definition: A competitive sport where two autonomous robots attempt to locate each other and push their opponent out of a circular ring[cite: 2].
+    Answer: Robot-Sumo
+
+19. Definition: An educational program in the Philippines providing robotics and AI skills for students from Grade 4 to 12[cite: 2].
+    Answer: Philippine Robotics Academy
+
+20. Definition: The award-winning space suit project created by the Philippine Robotics National Team to address astronaut muscle and bone loss in microgravity[cite: 2].
+    Answer: Project Mu.S.C.A.
+
+
+--------------------------------------------------------------------------------
+PART II: ARDUINO AND MICROCONTROLLERS (20 QUESTIONS)
+--------------------------------------------------------------------------------
+
+1. Definition: An open-source single-board microcontroller platform created to make interactive electronics projects accessible[cite: 2].
+   Answer: Arduino
+
+2. Definition: The pre-loaded software on a microcontroller chip that enables direct code uploads via USB without external hardware programmers[cite: 2].
+   Answer: Bootloader
+
+3. Definition: The cross-platform software environment used to compose, compile, and upload code to an Arduino board[cite: 2].
+   Answer: Arduino IDE (Integrated Development Environment)
+
+4. Definition: An all-in-one integrated circuit chip containing a processor core, fixed RAM, ROM, and I/O peripheral pins on a single die[cite: 2].
+   Answer: Microcontroller
+
+5. Definition: A processing chip that lacks internal RAM, ROM, or I/O ports, using external buses to interface with peripheral hardware[cite: 2].
+   Answer: Microprocessor
+
+6. Definition: The specific primary 8-bit microcontroller chip used on the standard Arduino Uno board[cite: 2].
+   Answer: ATmega328
+
+7. Definition: A custom code program written specifically to be executed on an Arduino board[cite: 2].
+   Answer: Sketch
+
+8. Definition: A physical input or output hardware connection header on a microcontroller circuit board[cite: 2].
+   Answer: Pin
+
+9. Definition: A binary electrical state or signal that is strictly either HIGH or LOW (on/off)[cite: 2].
+   Answer: Digital
+
+10. Definition: A continuous or multi-level signal representation ranging across a spectrum of values (such as 0–255 for PWM)[cite: 2].
+    Answer: Analog
+
+11. Definition: The Arduino programming function used to set an individual pin's behavior as either an INPUT or OUTPUT[cite: 2].
+    Answer: pinMode()
+
+12. Definition: The Arduino programming command used to send a digital HIGH or LOW voltage output to a designated pin[cite: 2].
+    Answer: digitalWrite()
+
+13. Definition: The Arduino timing command that pauses program execution for a specified number of milliseconds[cite: 2].
+    Answer: delay()
+
+14. Definition: The fundamental physical law defining the linear relationship between voltage, current, and resistance ($V = IR$)[cite: 2].
+    Answer: Ohm's Law
+
+15. Definition: A modular expansion board that plugs directly into the top of an Arduino to add capabilities like WiFi or cellular connectivity[cite: 2].
+    Answer: Shield
+
+16. Definition: A Philippine-manufactured Arduino-compatible microcontroller board based on the ATmega168 or ATmega328 microchip[cite: 2].
+    Answer: GizDuino
+
+17. Definition: A free web-based 3D modeling and circuit simulation software by Autodesk used to model Arduino projects virtually[cite: 2].
+    Answer: Tinkercad Circuits
+
+18. Definition: The output method on select digital pins that simulates an analog signal by modulating pulse width timing[cite: 2].
+    Answer: PWM (Pulse Width Modulation)
+
+19. Definition: The recommended external DC input voltage range required to properly power an Arduino Uno board[cite: 2].
+    Answer: 7–12V
+
+20. Definition: The operational clock frequency of the main crystal oscillator on an Arduino Uno board[cite: 2].
+    Answer: 16 MHz
+
+
+--------------------------------------------------------------------------------
+PART III: ACTUATORS AND SENSORS (20 QUESTIONS)
+--------------------------------------------------------------------------------
+
+1. Definition: A hardware device that converts electrical, fluid, or thermal energy into physical motion to control a mechanism[cite: 2].
+   Answer: Actuator
+
+2. Definition: A motor actuator that uses closed-loop feedback (position sensor, motor, and controller) to achieve precise angular positioning[cite: 2].
+   Answer: Servo Motor
+
+3. Definition: An electromechanical device that uses an energized magnetic coil to actuate a plunger and control fluid or gas flow[cite: 2].
+   Answer: Solenoid Valve
+
+4. Definition: A circuit module containing electrically operated switches used to control high-power loads using low-power control signals[cite: 2].
+   Answer: Relay Module
+
+5. Definition: An actuator engineered specifically to convert energy into straight-line motion along a single path[cite: 2].
+   Answer: Linear Actuator
+
+6. Definition: An electric motor built without mechanical brushes, utilizing electronic commutation for higher efficiency and longevity[cite: 2].
+   Answer: Brushless Motor
+
+7. Definition: Actuator mechanism that generates motion by heating specific metal alloys designed to return to their original pre-deformed shape[cite: 2].
+   Answer: Shape Memory Alloy (SMA) Actuator
+
+8. Definition: A high-force actuator system that generates mechanical motion by pumping pressurized hydraulic fluid into a cylinder-piston assembly[cite: 2].
+   Answer: Hydraulic Actuator
+
+9. Definition: A hardware device that detects environmental changes or physical properties and converts them into readable electronic signals[cite: 2].
+   Answer: Sensor
+
+10. Definition: Distance sensor (such as the HC-SR04) that emits sonar pulses to calculate object range via acoustic echo timings[cite: 2].
+    Answer: Ultrasonic Distance Sensor
+
+11. Definition: Light-sensitive variable resistor whose electrical resistance decreases as ambient light exposure increases[cite: 2].
+    Answer: Light Dependent Resistor (LDR)
+
+12. Definition: A combined environmental sensor module (like the DHT11) using a capacitive sensor for humidity and a thermistor for temperature[cite: 2].
+    Answer: Temperature/Humidity Sensor
+
+13. Definition: A sensor that measures proper acceleration forces to determine orientation, tilt, or dynamic motion in devices[cite: 2].
+    Answer: Accelerometer
+
+14. Definition: A sensor that tracks orientation by measuring angular velocity around an axis using a spinning mass or MEMS structure[cite: 2].
+    Answer: Gyroscope Sensor
+
+15. Definition: A directional sensor that detects the strength and orientation of magnetic fields, commonly utilized for digital compasses[cite: 2].
+    Answer: Magnetometer
+
+16. Definition: A non-contact sensor that detects presence, approach, or distance of nearby objects without physical touch[cite: 2].
+    Answer: Proximity Sensor
+
+17. Definition: Metal-oxide semiconductor gas sensor module engineered to specifically detect flammable gases and smoke[cite: 2].
+    Answer: MQ-Series Gas Sensor
+
+18. Definition: A photoplethysmography (PPG) sensor that uses light absorption to detect subcutaneous blood volume changes and calculate pulse rate[cite: 2].
+    Answer: Heart Rate (Pulse) Sensor
+
+19. Definition: An ion-selective electrode sensor that measures the acidity or alkalinity of liquid solutions by measuring potential differences[cite: 2].
+    Answer: pH Sensor
+
+20. Definition: Wireless technology (Radio-Frequency Identification) using radio frequency signals to exchange data stored on passive or active tags[cite: 2].
+    Answer: RFID
