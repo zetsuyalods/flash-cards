@@ -12,15 +12,27 @@ function checkAnswer(userAnswer, correctAnswer) {
   return matched.length >= Math.ceil(correctWords.length * 0.5);
 }
 
+function generateHint(answer) {
+  const words = answer.split(/\s+/);
+  return words.map((word) => {
+    if (word.length <= 1) return word;
+    const first = word[0];
+    const rest = word.slice(1).replace(/[a-zA-Z0-9]/g, '_');
+    return first + rest;
+  }).join(' ');
+}
+
 export default function FlashCard({ card, onMark }) {
   const [flipped, setFlipped] = useState(false);
   const [userAnswer, setUserAnswer] = useState('');
   const [result, setResult] = useState(null);
+  const [showHint, setShowHint] = useState(false);
 
   useEffect(() => {
     setUserAnswer('');
     setResult(null);
     setFlipped(false);
+    setShowHint(false);
   }, [card.id]);
 
   useEffect(() => {
@@ -51,6 +63,8 @@ export default function FlashCard({ card, onMark }) {
     }
   };
 
+  const hint = generateHint(card.back);
+
   return (
     <div className={`flashcard-container ${flipped ? 'flipped' : ''}`} onClick={handleFlip}>
       <div className="flashcard">
@@ -71,6 +85,14 @@ export default function FlashCard({ card, onMark }) {
                 Check
               </button>
             </div>
+          )}
+          {result === null && !showHint && (
+            <button className="btn-hint" onClick={(e) => { e.stopPropagation(); setShowHint(true); }}>
+              Hint
+            </button>
+          )}
+          {result === null && showHint && (
+            <div className="hint-text">{hint}</div>
           )}
           {result !== null && (
             <div className={`feedback ${result ? 'correct' : 'incorrect'}`}>
