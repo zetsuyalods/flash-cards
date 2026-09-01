@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
+import FileUpload from './FileUpload';
 import './DeckList.css';
 
-export default function DeckList({ decks, onSelectDeck, onEditCards }) {
+export default function DeckList({ decks, onSelectDeck, onEditCards, onUploadDeck }) {
   const [expandedCategories, setExpandedCategories] = useState({});
 
   const categories = {};
@@ -15,12 +16,18 @@ export default function DeckList({ decks, onSelectDeck, onEditCards }) {
     setExpandedCategories((prev) => ({ ...prev, [cat]: !prev[cat] }));
   };
 
+  const existingCategories = [...new Set(decks.map((d) => d.category).filter(Boolean))];
+
   const uncategorized = categories['Other'] || [];
   const categorized = Object.entries(categories).filter(([cat]) => cat !== 'Other');
 
   return (
     <div className="deck-list">
       <h1>Your Decks</h1>
+
+      <div className="upload-area">
+        <FileUpload onUpload={onUploadDeck} existingCategories={existingCategories} />
+      </div>
 
       {uncategorized.length > 0 && (
         <div className="decks-grid">
