@@ -120,3 +120,8 @@
 .category-section .decks-grid {
   padding: 0 1.5rem 1.5rem;
 }
+
+.upload-area {
+  max-width: 900px;
+  margin: 0 auto 2rem;
+}

@@ -63,6 +63,13 @@ function App() {
     }));
   };
 
+  const handleUploadDeck = (newDeck) => {
+    setData((prev) => ({
+      ...prev,
+      decks: [...prev.decks, newDeck],
+    }));
+  };
+
   return (
     <div className="app">
       {view === VIEWS.DECKS && (
@@ -70,6 +77,7 @@ function App() {
           decks={data.decks}
           onSelectDeck={handleSelectDeck}
           onEditCards={handleEditDeck}
+          onUploadDeck={handleUploadDeck}
         />
       )}
       {view === VIEWS.STUDY && activeDeck && (
