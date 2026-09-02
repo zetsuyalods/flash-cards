@@ -72,6 +72,22 @@
   color: #fff;
 }
 
+.btn-delete-deck {
+  padding: 0.6rem 1rem;
+  border: 1px solid #e74c3c;
+  border-radius: 8px;
+  background: transparent;
+  color: #e74c3c;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.btn-delete-deck:hover {
+  background: #e74c3c;
+  color: #fff;
+}
+
 .category-section {
   max-width: 900px;
   margin: 0 auto 1.5rem;
@@ -115,6 +131,23 @@
   color: #666;
   font-size: 0.9rem;
   margin-left: auto;
+}
+
+.btn-delete-category {
+  padding: 0.3rem 0.8rem;
+  border: 1px solid #e74c3c;
+  border-radius: 6px;
+  background: transparent;
+  color: #e74c3c;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  flex-shrink: 0;
+}
+
+.btn-delete-category:hover {
+  background: #e74c3c;
+  color: #fff;
 }
 
 .category-section .decks-grid {

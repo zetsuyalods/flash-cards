@@ -70,6 +70,13 @@ function App() {
     }));
   };
 
+  const handleDeleteCategory = (category) => {
+    setData((prev) => ({
+      ...prev,
+      decks: prev.decks.filter((d) => d.category !== category),
+    }));
+  };
+
   return (
     <div className="app">
       {view === VIEWS.DECKS && (
@@ -78,6 +85,8 @@ function App() {
           onSelectDeck={handleSelectDeck}
           onEditCards={handleEditDeck}
           onUploadDeck={handleUploadDeck}
+          onDeleteCategory={handleDeleteCategory}
+          onDeleteDeck={handleDeleteDeck}
         />
       )}
       {view === VIEWS.STUDY && activeDeck && (

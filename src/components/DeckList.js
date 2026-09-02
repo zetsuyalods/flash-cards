@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import FileUpload from './FileUpload';
 import './DeckList.css';
 
-export default function DeckList({ decks, onSelectDeck, onEditCards, onUploadDeck }) {
+export default function DeckList({ decks, onSelectDeck, onEditCards, onUploadDeck, onDeleteCategory, onDeleteDeck }) {
   const [expandedCategories, setExpandedCategories] = useState({});
 
   const categories = {};
@@ -42,6 +42,16 @@ export default function DeckList({ decks, onSelectDeck, onEditCards, onUploadDec
                 <button className="btn-edit" onClick={() => onEditCards(deck.id)}>
                   Edit
                 </button>
+                <button
+                  className="btn-delete-deck"
+                  onClick={() => {
+                    if (window.confirm(`Delete "${deck.name}"?`)) {
+                      onDeleteDeck(deck.id);
+                    }
+                  }}
+                >
+                  Delete
+                </button>
               </div>
             </div>
           ))}
@@ -62,6 +72,17 @@ export default function DeckList({ decks, onSelectDeck, onEditCards, onUploadDec
               {catDecks.length} topic{catDecks.length !== 1 ? 's' : ''} &middot;{' '}
               {catDecks.reduce((sum, d) => sum + d.cards.length, 0)} cards
             </span>
+            <button
+              className="btn-delete-category"
+              onClick={(e) => {
+                e.stopPropagation();
+                if (window.confirm(`Delete "${cat}" and all its decks?`)) {
+                  onDeleteCategory(cat);
+                }
+              }}
+            >
+              Delete
+            </button>
           </div>
           {expandedCategories[cat] && (
             <div className="decks-grid">
@@ -75,6 +96,16 @@ export default function DeckList({ decks, onSelectDeck, onEditCards, onUploadDec
                     </button>
                     <button className="btn-edit" onClick={() => onEditCards(deck.id)}>
                       Edit
+                    </button>
+                    <button
+                      className="btn-delete-deck"
+                      onClick={() => {
+                        if (window.confirm(`Delete "${deck.name}"?`)) {
+                          onDeleteDeck(deck.id);
+                        }
+                      }}
+                    >
+                      Delete
                     </button>
                   </div>
                 </div>
